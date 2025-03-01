@@ -45,10 +45,8 @@ if (document.getElementById('loginForm')) {
 // Google Login Handler
 if (document.getElementById('googleLogin')) {
     document.getElementById('googleLogin').addEventListener('click', function() {
-        // Simulate Google Login process
         showToast('Redirecting to Google authentication...');
         
-        // Here you would typically integrate with Google OAuth
         setTimeout(() => {
             showToast('Google login successful!');
             window.location.href = 'index.html';
@@ -59,10 +57,8 @@ if (document.getElementById('googleLogin')) {
 // Google Sign Up Handler
 if (document.getElementById('googleSignUp')) {
     document.getElementById('googleSignUp').addEventListener('click', function() {
-        // Simulate Google Sign Up process
         showToast('Redirecting to Google authentication...');
         
-        // Here you would typically integrate with Google OAuth
         setTimeout(() => {
             showToast('Google sign up successful!');
             window.location.href = 'index.html';

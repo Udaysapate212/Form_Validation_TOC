@@ -1,4 +1,4 @@
-/*ROOT VARIABLES*/
+/*Root Variables*/
 :root {
     --primary: #2563eb;
     --primary-hover: #1d4ed8;
@@ -114,6 +114,9 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.input-group {
+    margin-bottom: 1.5rem; /* This creates a large gap between input boxes */
+}
 
 .input-group label {
     display: block;
