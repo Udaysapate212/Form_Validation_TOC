@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - Form Validation</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Form Validation Activity</h1>
+        <nav>
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="login.html" class="nav-link">Login</a>
+            <a href="signup.html" class="nav-link">SignUp</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>TOC Activity No-1</h2>
+        <p class="subtitle">Form Validation using Regular Expressions in JavaScript</p>
+
+        <table class="members-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>PRN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Uday Sapate</td>
+                    <td>202301040162</td>
+                </tr>
+                <tr>
+                    <td>Ketan Sonawane</td>
+                    <td>202301040161</td>
+                </tr>
+                <tr>
+                    <td>Uber Shaikh</td>
+                    <td>202301040147</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cta-buttons">
+            <a href="login.html" class="btn primary">Login Validation</a>
+            <a href="signup.html" class="btn secondary">SignUp Validation</a>
+        </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="scripts/common.js"></script>
 </body>
 </html>
