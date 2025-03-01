@@ -1,4 +1,4 @@
-/* ===== ROOT VARIABLES ===== */
+/*ROOT VARIABLES*/
 :root {
     --primary: #2563eb;
     --primary-hover: #1d4ed8;
@@ -16,7 +16,6 @@
     --font-weight-bold: 700;
 }
 
-/* ===== GLOBAL RESETS ===== */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +31,7 @@ body {
     min-height: 100vh;
 }
 
-/* ===== TYPOGRAPHY ===== */
+
 h1, h2, h3 {
     font-weight: var(--font-weight-semibold);
     line-height: 1.2;
@@ -59,7 +58,8 @@ p {
     margin-bottom: 1.25rem;
 }
 
-/* ===== HEADER ===== */
+
+
 .header {
     background: white;
     padding: 1rem 2rem;
@@ -67,6 +67,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure the header stays above other content */
 }
 
 .header h1 {
@@ -93,7 +96,6 @@ p {
     color: var(--primary);
 }
 
-/* ===== CONTAINERS ===== */
 .container {
     max-width: 1200px;
     margin: 2rem auto;
@@ -112,7 +114,6 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== FORM ELEMENTS ===== */
 
 .input-group label {
     display: block;
@@ -162,7 +163,6 @@ p {
     background: var(--primary-hover);
 }
 
-/* ===== TOAST NOTIFICATION ===== */
 .toast {
     position: fixed;
     bottom: 2rem;
@@ -182,7 +182,6 @@ p {
     to { transform: translateX(0); }
 }
 
-/* ===== TABLES ===== */
 .members-table {
     width: 100%;
     border-collapse: collapse;
@@ -200,7 +199,7 @@ p {
     font-weight: var(--font-weight-semibold);
 }
 
-/* ===== BUTTONS ===== */
+
 .cta-buttons {
     display: flex;
     gap: 1rem;
@@ -233,7 +232,6 @@ p {
     background: #4338ca;
 }
 
-/* ===== SOCIAL LOGIN ===== */
 .social-login {
     margin: 1.5rem 0;
     text-align: center;
@@ -271,7 +269,6 @@ p {
     width: 24px;
 }
 
-/* ===== LINKS ===== */
 .signup-link,
 .login-link {
     text-align: center;
@@ -291,7 +288,6 @@ p {
     text-decoration: underline;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
